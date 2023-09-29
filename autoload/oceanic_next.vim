@@ -176,6 +176,9 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('NeomakeError',                      a:red,    '',       'underline', a:red)
   call s:hi('NeomakeWarning',                    a:red,    '',       'underline', a:red)
 
+  hi clear ALEError
+  hi clear ALEWarning
+  hi clear ALEInfo
   call s:hi('ALEErrorSign',                      a:red,    a:base00, s:bold,      '')
   call s:hi('ALEWarningSign',                    a:yellow, a:base00, s:bold,      '')
   call s:hi('ALEInfoSign',                       a:white,  a:base00, s:bold,      '')
