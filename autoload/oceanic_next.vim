@@ -53,7 +53,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('SpecialKey',                        a:base03, '',       '',          '')
   call s:hi('TooLong',                           a:red,    '',       '',          '')
   call s:hi('Underlined',                        a:red,    '',       '',          '')
-  call s:hi('Visual',                            '',       a:base02, '',          '')
+  call s:hi('Visual',                            '',       a:base01, '',          '')
   call s:hi('VisualNOS',                         a:red,    '',       '',          '')
   call s:hi('WarningMsg',                        a:red,    '',       '',          '')
   call s:hi('WildMenu',                          a:base07, a:blue,   '',          '')
