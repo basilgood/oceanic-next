@@ -62,7 +62,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Cursor',                            a:base00, a:base05, '',          '')
   call s:hi('NonText',                           a:base01, '',       '',          '')
   call s:hi('Normal',                            a:base07, a:base00, '',          '')
-  call s:hi('EndOfBuffer',                       a:base05, a:base00, '',          '')
+  call s:hi('EndOfBuffer',                       a:base01, a:base00, '',          '')
   call s:hi('LineNr',                            a:base03, a:base00, '',          '')
   call s:hi('SignColumn',                        a:base00, a:base00, '',          '')
   call s:hi('StatusLine',                        a:base01, a:base07, '',          '')
