@@ -32,16 +32,17 @@ function! s:hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 
-function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, red, orange, yellow, green, cyan, blue, purple, brown, white, none) abort
+function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, base08, red, orange, yellow, green, cyan, blue, purple, magenta, brown, white, none) abort
 
   call s:hi('Bold',                              '',       '',       s:bold,      '')
+  call s:hi('CurSearch',                         '',       a:magenta, 'NONE',     '')
   call s:hi('Debug',                             a:red,    '',       '',          '')
   call s:hi('Directory',                         a:blue,   '',       '',          '')
   call s:hi('ErrorMsg',                          a:red,    a:base00, '',          '')
   call s:hi('Exception',                         a:red,    '',       '',          '')
   call s:hi('FoldColumn',                        a:blue,   a:base00, '',          '')
   call s:hi('Folded',                            a:base03, a:base01, s:italic,    '')
-  call s:hi('IncSearch',                         a:base01, a:orange, 'NONE',      '')
+  call s:hi('IncSearch',                         '',       a:magenta, 'NONE',     '')
   call s:hi('Italic',                            '',       '',       s:italic,    '')
 
   call s:hi('Macro',                             a:red,    '',       '',          '')
