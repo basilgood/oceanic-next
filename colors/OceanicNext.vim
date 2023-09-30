@@ -44,6 +44,7 @@ call oceanic_next#highlight(
   \ s:base05,
   \ s:base06,
   \ s:base07,
+  \ s:base08,
   \ s:red,
   \ s:orange,
   \ s:yellow,
@@ -51,6 +52,7 @@ call oceanic_next#highlight(
   \ s:cyan,
   \ s:blue,
   \ s:purple,
+  \ s:magenta,
   \ s:brown,
   \ s:white,
   \ s:none
