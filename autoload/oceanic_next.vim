@@ -32,7 +32,7 @@ function! s:hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 
-function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, base08, red, orange, yellow, green, cyan, blue, purple, magenta, brown, white, none) abort
+function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, lightbg, darkbg, red, orange, yellow, green, cyan, blue, purple, magenta, brown, white, none) abort
 
   call s:hi('Bold',                              '',       '',       s:bold,      '')
   call s:hi('CurSearch',                         '',       a:magenta, 'NONE',     '')
@@ -50,7 +50,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('ModeMsg',                           a:green,  '',       '',          '')
   call s:hi('MoreMsg',                           a:green,  '',       '',          '')
   call s:hi('Question',                          a:blue,   '',       '',          '')
-  call s:hi('Search',                            '',       a:base08, '',          '')
+  call s:hi('Search',                            '',       a:lightbg, '',          '')
   call s:hi('SpecialKey',                        a:base01, '',       '',          '')
   call s:hi('TooLong',                           a:red,    '',       '',          '')
   call s:hi('Underlined',                        a:red,    '',       '',          '')
@@ -134,9 +134,9 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('cssBraces',                         a:base05, '',       '',          '')
   call s:hi('cssClassName',                      a:purple, '',       '',          '')
 
-  call s:hi('DiffAdd',                           '',       a:base00, '',          '')
-  call s:hi('DiffChange',                        '',       a:base00, '',          '')
-  call s:hi('DiffDelete',                        a:red,    a:base00, '',          '')
+  call s:hi('DiffAdd',                           '',       a:darkbg, '',          '')
+  call s:hi('DiffChange',                        '',       a:darkbg, '',          '')
+  call s:hi('DiffDelete',                        a:red,    a:darkbg, '',          '')
   call s:hi('DiffText',                          '',       a:base01, '',          '')
   call s:hi('DiffAdded',                         a:green,  a:base00, '',          '')
   call s:hi('DiffFile',                          a:red,    a:base00, '',          '')
