@@ -32,7 +32,7 @@ function! s:hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 
-function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, lightbg, darkbg, red, orange, yellow, green, cyan, blue, purple, magenta, brown, white, none) abort
+function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, darkbg, red, orange, yellow, green, cyan, blue, purple, magenta, brown, white, none) abort
 
   call s:hi('Bold',                              '',       '',       s:bold,      '')
   call s:hi('CurSearch',                         '',       a:magenta, 'NONE',     '')
@@ -50,7 +50,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('ModeMsg',                           a:green,  '',       '',          '')
   call s:hi('MoreMsg',                           a:green,  '',       '',          '')
   call s:hi('Question',                          a:blue,   '',       '',          '')
-  call s:hi('Search',                            '',       a:lightbg, '',          '')
+  call s:hi('Search',                            '',       a:base01, '',          '')
   call s:hi('SpecialKey',                        a:base01, '',       '',          '')
   call s:hi('TooLong',                           a:red,    '',       '',          '')
   call s:hi('Underlined',                        a:red,    '',       '',          '')
