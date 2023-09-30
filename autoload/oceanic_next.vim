@@ -50,7 +50,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('ModeMsg',                           a:green,  '',       '',          '')
   call s:hi('MoreMsg',                           a:green,  '',       '',          '')
   call s:hi('Question',                          a:blue,   '',       '',          '')
-  call s:hi('Search',                            a:base03, a:yellow, '',          '')
+  call s:hi('Search',                            '',       a:base08, '',          '')
   call s:hi('SpecialKey',                        a:base01, '',       '',          '')
   call s:hi('TooLong',                           a:red,    '',       '',          '')
   call s:hi('Underlined',                        a:red,    '',       '',          '')
