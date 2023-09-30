@@ -21,7 +21,7 @@
   let s:base05 = ['#c0c5ce', '251']
   let s:base06 = ['#cdd3de', '252']
   let s:base07 = ['#b0b6ba', '253']
-  let s:base08 = ['#2f4f4f,  '243']
+  let s:base08 = ['#2f4f4f', '243']
   let s:red    = ['#ec5f67', '203']
   let s:orange = ['#f99157', '209']
   let s:yellow = ['#fac863', '221']
