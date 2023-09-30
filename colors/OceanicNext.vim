@@ -21,7 +21,6 @@
   let s:base05 = ['#c0c5ce', '251']
   let s:base06 = ['#cdd3de', '252']
   let s:base07 = ['#b0b6ba', '253']
-  let s:lightbg = ['#2f4f4f', '243']
   let s:darkbg = ['#182228', '232']
   let s:red    = ['#ec5f67', '203']
   let s:orange = ['#f99157', '209']
@@ -46,7 +45,6 @@ call oceanic_next#highlight(
   \ s:base06,
   \ s:base07,
   \ s:darkbg,
-  \ s:lightbg,
   \ s:red,
   \ s:orange,
   \ s:yellow,
