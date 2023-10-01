@@ -38,6 +38,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('CurSearch',                         '',       a:magenta, 'NONE',     '')
   call s:hi('Debug',                             a:red,    '',       '',          '')
   call s:hi('Directory',                         a:blue,   '',       '',          '')
+  call s:hi('Error',                             a:red,    a:base00, '',          '')
   call s:hi('ErrorMsg',                          a:red,    a:base00, '',          '')
   call s:hi('Exception',                         a:red,    '',       '',          '')
   call s:hi('FoldColumn',                        a:blue,   a:base00, '',          '')
